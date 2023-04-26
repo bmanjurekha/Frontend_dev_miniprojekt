@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="review.js" defer></script>
+  <script src="serving.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Awesome Recipes</title>
+</head>
+<body>
+  <header class="page-header invert-theme">
+    <h1 class="header-headline">Awesome Recipes</h1>
+    <h2 class="header-subtitle">Chocolate Chip Cookies</h2>
+  </header>
+  <nav class="crumbs">
+    <ol>
+        <li class="crumb"><a href="chocochip-cookies.html">Home</a></li>
+        <li class="crumb">Cookie Recipe</li>
+    </ol>
+</nav>
+<main>
+  <article>
+    <div class="column1" >
+      <section>
+      <h2 class="content-header">Do This</h2>
+          <ol class="recipe-content">
+            
+            <li>Preheat oven 200c</li>
+            <li>Add flour, baking soda in small bowl and beat butter with granulated sugar and vanilla extract in a large mixer bowl until creamy</li>
+            <li> Add eggs, one at a time, beating well after each addition. Gradually beat in flour mixture. Stir in chopped choclolate</li>   
+            <li>Cool well the batter, at least for 2 hours.</li>
+            <li>Roll the dough into small balls and place on baking paper</li>
+            <Li>Bake the cookies for 10mins or until golden brown. Let the cookies cooldown on tray</Li>
+          </ol> 
+        </section>
+    </div>
+    <div class="column2" >
+        <h2 class="content-header" >Ingredients</h2>
+        <p class="recipe-content">The recipe is valid for <label class="serving">15</label> pcs (
+        <input class="serving-field" type="text" /> )
+      </p>
+       <ul class="recipe-content">
+            <li ><label class="flour">2</label> cups all-purpose flour</li>
+            <li>1 tsp baking soda</li>
+            <li>1 cup (2 sticks) butter</li>
+            <li><label class="sugar">2</label> cup granulated sugar</li>
+            <li>1 tsp vanilla extract</li>
+            <li><label class="eggs">2</label> large eggs</li>
+            <li>1 cup chopped choclolate</li>
+          </ul>   
+     </div>
+     <!--Comment This Grading with 5Stars is taken as inspiration from 
+    https://codepen.io/hesguru/pen/BaybqXv and adapted changes with adding <p> & class,variable names
+    -->
+     <div class="grading">
+      <p class="recipe-content">Rate & Review</p>
+      <input type="radio" id="star5" name="grade5" value="5" />
+      <label for="star5" title="text">5 stars</label>
+      <input type="radio" id="star4" name="grade4" value="4" />
+      <label for="star4" title="text">4 stars</label>
+      <input type="radio" id="star3" name="grade3" value="3" />
+      <label for="star3" title="text">3 stars</label>
+      <input type="radio" id="star2" name="grade2" value="2" />
+      <label for="star2" title="text">2 stars</label>
+      <input type="radio" id="star1" name="grade1" value="1" />
+      <label for="star1" title="text">1 star</label>
+    </div>
+    <div class="review">
+      <input class="message-field" type="text" placeholder="Write review message..." />
+      <button class="review-btn">Review</button>
+      <p class="typing-status">User is typing...</p>
+      <ul class="review-message">
+      </ul>
+    </div>
+  </article>
+</main>
+
+</body>
+</html>
