@@ -30,13 +30,13 @@ html, body {
     width: 60%;
     flex-wrap: wrap;  
     overflow-clip-margin: inherit;
-    overflow: hidden;  
+    
   }
   .column2 {
     float: left;
     flex-wrap: wrap;  
     overflow-clip-margin: inherit;
-    overflow: hidden;  
+    
   }
   
   .content
@@ -80,45 +80,9 @@ html, body {
     font-weight: bold;
     padding: 0 3px;
 }
-/*CSS used for rating */
-.grading {
-  float: left;
-    padding: 0em 83em;
-}
-.grading:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-}
-.grading:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:30px;
-  color:#ccc;
-}
-.grading:not(:checked) > label:before {
-  content: '★ ';
-}
-.grading > input:checked ~ label {
-  color: #ffc700;    
-}
-.grading:not(:checked) > label:hover,
-.grading:not(:checked) > label:hover ~ label {
-  color: #deb217;  
-}
-.grading > input:checked + label:hover,
-.grading > input:checked + label:hover ~ label,
-.grading > input:checked ~ label:hover,
-.grading > input:checked ~ label:hover ~ label,
-.grading > label:hover ~ input:checked ~ label {
-  color: #c59b08;
-}
 /*CSS used for review*/
 .review{
-  padding: 5em 100em;
-    float: right;
+  padding: 5em 6em;
 }
 .typing-status {
   visibility: hidden;
@@ -182,10 +146,32 @@ html, body {
 .serving-field{
   width: 5%;
 }
+.dvimg {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 1em;
+}
+.img-lst {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 1em;
+}
+.img-lst img {
+  margin-top: 2em;
+  vertical-align: middle;
+  width: 100%;
+}
 
 /* media query --> min-width implementeras som mobile-first */
 @media screen and (min-width: 768px) {
-  
+  .img-lst {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 
